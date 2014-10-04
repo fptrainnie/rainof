@@ -1,0 +1,19 @@
+import org.newdawn.slick.Image;
+import org.newdawn.slick.SlickException;
+
+
+public class Stick {
+	private Image image;
+	private int x;
+	private int y;
+	
+	public Stick(int x, int y) throws SlickException {
+		image = new Image("res/stick.png");
+		this.x = x;
+		this.y = y;
+	}
+	
+	public void draw() {
+		image.draw(x, y);
+	}
+}
